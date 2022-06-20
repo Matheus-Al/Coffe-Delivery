@@ -53,6 +53,7 @@ body {
   cursor: pointer;
   display: none;
   transition: .3s;
+  margin-right: 0rem;
 }
 
 #menu-icon:hover {
@@ -71,6 +72,10 @@ nav{
   justify-content: space-around; 
   align-items: center;
   margin-top: 2rem;
+}
+
+@media (max-width: 576px){
+
 }
 
 .nav-links{
@@ -103,11 +108,12 @@ a{
   #title{
     margin-bottom: 50px;
     font-size: 1.5rem;
+    margin-right: auto;
     display: block;
   }
 
   .logo{
-    margin-left: 10vw;
+    margin-left: 6.5vw;
   }
 
   nav{
@@ -146,7 +152,7 @@ a{
     #menu-icon{
       display: block;
       color: var(--brown-color);
-      margin-right: 5rem;
+      margin-right: 1.5rem;
     }
 
     #close-btn{
@@ -554,6 +560,16 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 992px){
+  body{
+    overflow-x: hidden;
+  }
+  .bg-image{
+    display: none;
+  }
 }
 /* Newsletter Section */
 .scoop-icon{
@@ -608,6 +624,13 @@ body{
   padding: 15px 3.2rem;
   background-color: #361509;
   font-size: 1rem;
+}
+
+@media(max-width: 576px){
+  .email-input{
+    width: 80%;
+    margin-bottom: 10px;
+  }
 }
 /* End of Newsletter Section */
 
